@@ -1,23 +1,47 @@
 aid: aurefluidicstechnology
+
 name: Aurefluidicstechnology
-description: 'Aurefluidicstechnology is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aurefluidicstechnology is a technology company that focuses on developing advanced microfluidic solutions for scientific and industrial applications. The company aims to provide innovative fluid handling platforms that enable precise control and manipulation of fluids at the microscale, supporting research, diagnostics, and manufacturing processes. While detailed public information is limited, the company is listed in secondary-market harvests and is slated for further profiling to uncover its API offerings and technical documentation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aurefluidicstechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aurefluidicstechnology-hosts.yml
+- type: Vendors
+  url: vendors/aurefluidicstechnology-vendors.yml
+- type: DomainSecurity
+  url: security/aurefluidicstechnology-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/aurefluidicstechnology
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
